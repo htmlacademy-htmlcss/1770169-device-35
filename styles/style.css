@@ -851,9 +851,7 @@ body {
 .advantages-nav-item {
   display: flex;
   box-sizing: border-box;
-  /* justify-content: center; */
   margin-bottom: 35px;
-  /* padding-right: 120px; */
   width: 280px;
 }
 
@@ -863,12 +861,10 @@ body {
 }
 
 .advantages-nav-current:hover {
-  /* padding-left: 65px; */
   padding-left: 28px;
 }
 
 .advantages-nav-current:active {
-  /* padding-right: 65px; */
   padding-left: 28px;
 }
 
@@ -878,18 +874,11 @@ body {
 }
 
 .advantages-nav-current .advantages-nav-button:focus-visible {
-  /* outline: none; */
-  padding: 10px 135px 10px 16px;
+  padding: 10px 135px 10px 38px;
   outline-offset: 2px;
   outline: 2px solid #af4fff;
   z-index: 1;
 }
-
-/* .advantages-nav-current:focus-within {
-  outline-offset: 2px;
-  outline: 2px solid #af4fff;
-  z-index: 1;
-} */
 
 .advantages-nav-button {
   min-width: 160px;
