@@ -331,6 +331,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-decoration: none;
+  color: #ffffff;
 }
 
 .tooltip-link:hover,
