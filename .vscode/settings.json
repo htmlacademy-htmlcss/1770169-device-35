@@ -20,5 +20,6 @@
   "css.lint.zeroUnits": "error",
   "html.format.endWithNewline": true,
   "html.format.indentInnerHtml": true,
-  "livePreview.defaultPreviewPath": "/media/work/Flash_64/1770169-device-35/index.html"
+  "livePreview.defaultPreviewPath": "/media/work/Flash_64/1770169-device-35/index.html",
+  "liveServer.settings.port": 5501
 }
