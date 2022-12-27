@@ -92,7 +92,9 @@
           </div>
           <div class="header-nav-wrapper">
             <div class="header-catalog">
-              <button class="header-catalog-button" type="button">Каталог товаров</button>
+              <div class="header-catalog-button-wrapper">
+                <button class="header-catalog-button" type="button">Каталог товаров</button>
+              </div>
               <ul class="header-catalog-list">
                 <li class="header-catalog-item">
                   <a class="header-catalog-link" href="#">Виртуальная реальность</a>
@@ -116,7 +118,8 @@
             </div>
             <ul class="header-nav-list">
               <li class="header-nav-item">
-                <a class="header-nav-link header-nav-item-current" href="#">Доставка</a>
+                <!-- .header-nav-item-current -->
+                <a class="header-nav-link" href="#">Доставка</a>
               </li>
               <li class="header-nav-item">
                 <a class="header-nav-link" href="#">Гарантия</a>
@@ -135,6 +138,12 @@
         <div class="container">
           <div class="slider-wrapper">
             <h2 class="visually-hidden">Топ товары</h2>
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущий товар</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующий товар</span>
+            </button>
             <ul class="top-product-list">
               <li class="top-product-item top-product-current">
                 <img class="top-product-image" src="images/slider/quadrocopter.png" alt="Квадрокоптер" width="560" height="560">
@@ -200,12 +209,6 @@
                 </div>
               </li>
             </ul>
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущий товар</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующий товар</span>
-            </button>
             <ol class="slider-pagination-list">
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button pagination-button-current" type="button">
@@ -314,14 +317,16 @@
         <div class="container">
           <h2 class="visually-hidden">Товары под заказ</h2>
           <a class="under-order-link" href="#">
-            <svg class="under-order-icon" xmlns="http://www.w3.org/2000/svg" width="47" height="31" fill="none" viewBox="0 0 47 31">
-              <path fill="#000" d="m46.7 15.4-6.5-8.2c-.3-.4-.7-.6-1.2-.6h-8.3V1.5C30.7.7 30 0 29.2 0H1.5C.7 0 0 .7 0 1.5S.7 3 1.5 3h26.2v21.7H15.8c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.2 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h13.4c.8 0 1.5-.7 1.5-1.5V9.6h7.6l5.7 7.3v7.9h-2.2c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.1 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h3.7c.8 0 1.5-.7 1.5-1.5v-9.9c0-.4-.1-.7-.3-1ZM11.3 28c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Zm26.1 0c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Z"/>
-              <path fill="#000" d="M19.4 9.6c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5H4.8c-.8 0-1.5.7-1.5 1.5S4 9.6 4.8 9.6h14.6ZM17.7 14.7c0-.8-.7-1.5-1.5-1.5H1.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h14.7c.8 0 1.5-.7 1.5-1.5Z"/>
-            </svg>
+            <div class="under-order-icon-wrapper">
+              <svg class="under-order-icon" xmlns="http://www.w3.org/2000/svg" width="47" height="31" fill="none" viewBox="0 0 47 31">
+                <path fill="#000" d="m46.7 15.4-6.5-8.2c-.3-.4-.7-.6-1.2-.6h-8.3V1.5C30.7.7 30 0 29.2 0H1.5C.7 0 0 .7 0 1.5S.7 3 1.5 3h26.2v21.7H15.8c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.2 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h13.4c.8 0 1.5-.7 1.5-1.5V9.6h7.6l5.7 7.3v7.9h-2.2c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.1 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h3.7c.8 0 1.5-.7 1.5-1.5v-9.9c0-.4-.1-.7-.3-1ZM11.3 28c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Zm26.1 0c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Z"/>
+                <path fill="#000" d="M19.4 9.6c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5H4.8c-.8 0-1.5.7-1.5 1.5S4 9.6 4.8 9.6h14.6ZM17.7 14.7c0-.8-.7-1.5-1.5-1.5H1.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h14.7c.8 0 1.5-.7 1.5-1.5Z"/>
+              </svg>
+            </div>
             <p class="under-order-description">Доставим редкий товар под заказ</p>
             <svg class="under-order-tooltip" xmlns="http://www.w3.org/2000/svg" width="41" height="40" fill="none" viewBox="0 0 41 40">
               <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5"/>
-              <g fill="#000" clip-path="url(#a)" opacity="0.3">
+              <g class="under-order-tooltip-inner" fill="#000" clip-path="url(#a)" opacity="0.3">
                 <path d="M21 14h-2v2h2v-2ZM21 18h-2v8h2v-8Z"/>
               </g>
               <defs>
@@ -464,7 +469,8 @@
         </div>
       </div>
     </footer>
-    <div class="modal-container modal-container-close">
+    <!--modal-container-show-->
+    <div class="modal-container modal-container-show">
       <div class="modal-under-order">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
@@ -486,7 +492,12 @@
               <input class="modal-field field-product" type="text" id="modal-product" name="modal-product" placeholder="В свободной форме" required>
             </div>
             <div class="modal-field-groupe">
-              <label class="modal-label" for="modal-count">Количество:</label>
+              <div class="modal-label-wrapper">
+                <label class="modal-label" for="modal-count">Количество:</label>
+                <div class="modal-tooltip-icon" tabindex=0>
+                  <span class="modal-tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br>к провозу багажа.</span>
+                </div>
+              </div>
               <span class="field-wrapper">
                 <button class="modal-count-button button-decrement" type="button">
                   <span class="visually-hidden">Уменьшить</span>
@@ -502,9 +513,6 @@
                   </svg>
                 </button>
               </span>
-              <div class="modal-tooltip-icon" tabindex=0>
-                <span class="modal-tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br>к провозу багажа.</span>
-              </div>
             </div>
             <button class="button modal-form-button" type="submit">Отправить</button>
           </form>
