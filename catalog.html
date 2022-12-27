@@ -95,7 +95,9 @@
           </div>
           <div class="header-nav-wrapper">
             <div class="header-catalog">
-              <button class="header-catalog-button" type="button">Каталог товаров</button>
+              <div class="header-catalog-button-wrapper">
+                <button class="header-catalog-button" type="button">Каталог товаров</button>
+              </div>
               <ul class="header-catalog-list">
                 <li class="header-catalog-item">
                   <a class="header-catalog-link" href="#">Виртуальная реальность</a>
@@ -145,7 +147,7 @@
                 <a class="breadcrumbs-link" href="#">Каталог товаров</a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="catalog-monopods.html">Моноподы для селфи</a>
+                <span class="breadcrumbs-link-current">Моноподы для селфи</span>
               </li>
             </ul>
           </div>
@@ -167,7 +169,7 @@
                           <span class="visually-hidden">Минимальная цена</span>
                         </button>
                         <label class="range-label label-min">
-                          от<input class="range-field" type="number" name="min-price" value="0">
+                          от <input class="range-field" type="number" name="min-price" value="0" style="width: 1ch;" oninput="this.style.width=this.value.length + 'ch'">
                         </label>
                       </div>
                       <div class="range-wrapper range-wrapper-max">
@@ -175,7 +177,7 @@
                           <span class="visually-hidden">Максимальная цена</span>
                         </button>
                         <label class="range-label">
-                          до<input class="range-field" type="number" name="max-price" value="5000">
+                          до <input class="range-field" type="number" name="max-price" value="5000" style="width: 4ch;" oninput="this.style.width=this.value.length + 'ch'">
                         </label>
                       </div>
                     </div>
@@ -268,7 +270,7 @@
                     <img class="catalog-image" src="images/monopods-catolog/product-1.jpg" alt="" width="360" height="380">
                     <span class="catalog-price">500 ₽</span>
                     <div class="detail-wrapper">
-                      <a class="button catalog-detail" href="#">Подробнее</a>
+                      <span class="catalog-detail-button" href="#">Подробнее</span>
                     </div>
                   </a>
                 </li>
@@ -278,27 +280,27 @@
                     <img class="catalog-image" src="images/monopods-catolog/product-2.jpg" alt="" width="360" height="380">
                     <span class="catalog-price">1 500 ₽</span>
                     <div class="detail-wrapper">
-                      <a class="button catalog-detail" href="#">Подробнее</a>
+                      <span class="catalog-detail-button" href="#">Подробнее</span>
                     </div>
                   </a>
                 </li>
                 <li class="catalog-item">
-                  <a class="catalog-item-link" href="#">
-                    <h3 class="catalog-title novelty">Непотопляемая селфи-палка</h3>
+                  <a class="catalog-item-link catalog-new-product" href="#">
+                    <h3 class="catalog-title">Непотопляемая селфи-палка</h3>
                     <img class="catalog-image" src="images/monopods-catolog/product-3.jpg" alt="" width="360" height="380">
                     <span class="catalog-price">2 500 ₽</span>
                     <div class="detail-wrapper">
-                      <a class="button catalog-detail" href="#">Подробнее</a>
+                      <span class="catalog-detail-button" href="#">Подробнее</span>
                     </div>
                   </a>
                 </li>
                 <li class="catalog-item">
                   <a class="catalog-item-link" href="#">
                     <img class="catalog-image" src="images/monopods-catolog/product-4.jpg" alt="" width="360" height="380">
-                    <h3 class="catalog-title novelty">Селфи-палка «Следуй за мной»</h3>
+                    <h3 class="catalog-title">Селфи-палка «Следуй за мной»</h3>
                     <span class="catalog-price">1 500 ₽</span>
                     <div class="detail-wrapper">
-                      <a class="button catalog-detail" href="#">Подробнее</a>
+                      <span class="catalog-detail-button" href="#">Подробнее</span>
                     </div>
                   </a>
                 </li>
@@ -308,7 +310,7 @@
                 <a class="pagination-link-prev">Назад</a>
                 <ul class="pagination">
                   <li class="pagination-item">
-                    <a class="pagination-link pagination-current">1</a>
+                    <a class="pagination-link pagination-link-current">1</a>
                   </li>
                   <li class="pagination-item">
                     <a class="pagination-link" href="#">2</a>
@@ -323,7 +325,7 @@
                     <a class="pagination-link" href="#">15</a>
                   </li>
                 </ul>
-                <a class="pagination-link-next pagination-active" href="#">Вперёд</a>
+                <a class="pagination-link-next pagination-link-active" href="#">Вперёд</a>
               </div>
             </div>
           </div>
